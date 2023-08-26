@@ -1,0 +1,57 @@
+body {
+    background-color: wheat;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.searchBlock {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.searchBlock input {
+    width: 70%;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.searchBlock button {
+    width: 20%;
+}
+
+.cocktailInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cocktailName {
+    font-size: 60px;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.recipeContainer {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.recipeContainer ul li{
+    font-size: 50px;
+    margin-bottom: 10%;
+}
