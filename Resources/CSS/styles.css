@@ -12,6 +12,7 @@ header {
 header h1 {
     font-size: 45px;
     text-align: center;
+    cursor: pointer;
 }
 
 .searchBlock {
@@ -26,7 +27,7 @@ header h1 {
     margin-right: 20px;
 }
 
-.searchBlock button {
+.searchBlock .button {
     width: 20%;
 }
 
@@ -48,10 +49,14 @@ header h1 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 65%;
+    width: 80%;
 }
 
 .recipeContainer ul li{
     font-size: 50px;
     margin-bottom: 10%;
+}
+
+#hidden {
+    display: none;
 }
