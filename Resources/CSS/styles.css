@@ -37,7 +37,12 @@ header h1 {
     align-items: center;
 }
 
+.cocktailInfo img {
+    display: hidden;
+}
+
 .cocktailName {
+    display: none;
     font-size: 60px;
     margin-top: 15%;
     margin-bottom: 5%;
@@ -47,7 +52,7 @@ header h1 {
     margin-top: 10%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 80%;
 }
@@ -57,6 +62,38 @@ header h1 {
     margin-bottom: 10%;
 }
 
+.ingredientsContainer {
+    width: 57%;
+}
+
+.miscContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 43%;
+}
+
+.recipeContainer div h2 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+    margin: 0 0 5% 0;
+    text-decoration: underline;
+}
+
+.recipeContainer div h3 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0 0 10% 0;
+}
+
+.asd {
+    width: 43%;
+}
+
+/*
 #hidden {
     display: none;
 }
+*/

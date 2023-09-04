@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./Resources/CSS/styles.css">
+        <meta name="viewport" content="user-scalable=0">
     </head>
     <body>
         <header>
@@ -15,34 +16,47 @@
             </form>
 
         </header>
-        <div id="hidden">
+        <main id="hidden">
             <div class="cocktailInfo">
                 <h1 id="name" class="cocktailName">COCKTAIL NAME</h1>
                 <div class="cocktailImgCont">
-                    <img src="./Resources/Images/png-transparent-cocktail-fizzy-drinks-martini-drawing-alcoholic-drink-cocktail-glass-rectangle-monochrome.png" alt="Cocktail Picture">
+                    <img id="image" src="./Resources/Images/png-transparent-cocktail-fizzy-drinks-martini-drawing-alcoholic-drink-cocktail-glass-rectangle-monochrome.png" alt="Cocktail Picture">
                 </div>
                 <div class="recipeContainer">
                     <div class="ingredientsContainer">
-                        <ul>
-                            <li id="ing1">Ingredient 1</li>
-                            <li id="ing2">Ingredient 2</li>
-                            <li id="ing3">Ingredient 3</li>
-                            <li id="ing4">Ingredient 4</li>
-                            <li id="ing5">Ingredient 5</li>
-                            <li id="ing6">Ingredient 6</li>
+                        <ul id="ingredientsList">
+
                         </ul>
                     </div>
                     <div class="miscContainer">
-                        <ul>
+                        <div>
+                            <h2>Method</h2>
+                            <h3 id="method"></h3>
+                        </div>
+                        <div>
+                            <h2>Glass</h2>
+                            <h3 id="glass"></h3>
+                        </div>
+                        <div>
+                            <h2>Ice</h2>
+                            <h3 id="ice"></h3>
+                        </div>
+                        <div>
+                            <h2>Garnish</h2>
+                            <h3 id="garnish"></h3>
+                        </div>
+                    <!--
+                        <ul class="asd">
                             <li id="method">Method</li>
                             <li id="glass">Glass</li>
                             <li id="ice">Ice</li>
                             <li id="garnish">Decor</li>
                         </ul>
+                    -->
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
 
         <script src="./Resources/Js/script.js"></script>
     </body>
