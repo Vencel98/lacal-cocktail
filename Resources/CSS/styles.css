@@ -15,6 +15,36 @@ header h1 {
     cursor: pointer;
 }
 
+.libraryButton {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.librarySide ul {
+    margin-top: 6vh;
+}
+
+.librarySide ul li {
+    font-size: 2vh;
+    margin-bottom: 5%;
+    color: wheat;
+}
+
+.librarySide {
+    position: fixed;
+    height: 100vh;
+    width: 15vh;
+    background-color: purple;
+    right: -350px;
+
+    transition: right 0.5s;
+}
+
 .searchBlock {
     display: flex;
     justify-content: center;
@@ -44,7 +74,7 @@ header h1 {
 .cocktailName {
     display: none;
     font-size: 60px;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 
