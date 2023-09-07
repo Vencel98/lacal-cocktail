@@ -167,7 +167,7 @@ const openSide = () => {
         libraryPanel.style.right = '0';
         isSideOut = true;
     } else if (isSideOut) {
-        libraryPanel.style.right = '-350px';
+        libraryPanel.style.right = '-450px';
         isSideOut = false;
     }
 }
