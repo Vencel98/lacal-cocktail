@@ -31,8 +31,20 @@ header h1 {
 
 .librarySide ul li {
     font-size: 2vh;
-    margin-bottom: 5%;
+    height: 3vh;
+    padding-bottom: 5%;
     color: gold;
+}
+
+#classCocktailLibrary {
+    overflow: hidden;
+    height: 0;
+
+    transition: height 0.75s;
+}
+
+#classicCocktLibraryButton {
+    cursor: pointer;
 }
 
 .librarySide {
@@ -41,6 +53,7 @@ header h1 {
     width: 20vh;
     background-color: navy;
     right: -450px;
+    overflow-y: scroll;
 
     transition: right 0.75s;
 }

@@ -12,7 +12,8 @@ let ingredientsList = document.getElementById('ingredientsList');
 
 let libraryButton = document.getElementById('librButton');
 let libraryPanel = document.getElementById('librSide');
-let sideUl = document.getElementById('sideUl');
+let classCocktLibr = document.getElementById('classCocktailLibrary');
+let classicCocktLibraryButton = document.getElementById('classicCocktLibraryButton');
 
 let cocktailsArr = [];
 let newIngredients;
@@ -60,10 +61,10 @@ cocktailsArr.push(ginFizz);
 const hugo = cocktail('Hugo', ['6-8 Mint leaves', '50ml Elderflower liqueur', '100ml Le Altane prosecco'], 'Red wine glass', 'Ice cubes', 'Shake', 'Mint spring, <br>dehyd. lime wheel');
 cocktailsArr.push(hugo);
 
-const longIslandIcedTea = cocktail('Long Island Iced Tea', ['5ml Simple Syrup', '25ml Lemon juice', '10ml Cointreau', '10ml Larios gin', '10ml Havanna Club 3yo', '10ml Sierra Antiguo Plata', 'Top Coca Cola'], 'Highball', 'Ice cubes', 'Shake', 'Dehyd. lemon wheel');
+const longIslandIcedTea = cocktail('Long Island Iced Tea', ['5ml Simple Syrup', '25ml Lemon juice', '10ml Cointreau', '10ml Larios gin', '10ml Roberto Cavalli vodka', '10ml Havanna Club 3yo', '10ml Sierra Antiguo Plata', 'Top Coca Cola'], 'Highball', 'Ice cubes', 'Shake', 'Dehyd. lemon wheel');
 cocktailsArr.push(longIslandIcedTea);
 
-const maiTai = cocktail('Mai Tai', ['10ml Orgeat', '20ml Lime juice', '15ml Cointreau', '45ml Plantation Dark Rum'], 'Double rock glass', 'Ice cubes', 'Shake', 'Mint spring, <br>dehyd. lime wheel');
+const maiTai = cocktail('Mai Tai', ['10ml Orgeat', '20ml Lime juice', '15ml Cointreau', '45ml Plantation Dark Rum'], 'Double rock glass', 'Ice balls', 'Shake', 'Mint spring, <br>dehyd. lime wheel');
 cocktailsArr.push(maiTai);
 
 const manhattanSweet = cocktail('Manhattan Sweet', ['2 dash. Angostura bitters', '30ml Antica Formula', '60ml Four Roses bourbon'], 'Tall coupe', 'No ice', 'Stir', 'Cherry');
@@ -129,8 +130,9 @@ for (let i = 0; i < cocktailsArr.length; i++) {
     let cocktailOnTheList = document.createElement('li');
     cocktailOnTheList.innerHTML = cocktailsArr[i].name;
     cocktailOnTheList.style.cursor = 'pointer';
-    sideUl.appendChild(cocktailOnTheList);
+    classCocktLibr.appendChild(cocktailOnTheList);
 
+    // CLICKING ON AN ITEM WITHIN THE SIDEBAR ------------------------------------------
     cocktailOnTheList.addEventListener('click', reset);
     cocktailOnTheList.addEventListener('click', function() {
         document.getElementById('hidden').hidden = false; //this is the whole content
@@ -157,8 +159,28 @@ for (let i = 0; i < cocktailsArr.length; i++) {
         method.hidden = false;
         ice.hidden = false;
         garnish.hidden = false;    
+
+        // CLOSING THE SIDEBAR, WHEN AN ITEM IS CLICKED ------------------------------
+        libraryPanel.style.right = '-450px';
+        isSideOut = false;
+
+        classCocktLibr.style.height = '0';
+        isClassicsTabOpen = true;
+
     });
 }
+
+let isClassicsTabOpen = true;
+
+classicCocktLibraryButton.addEventListener('click', function () {
+    if (isClassicsTabOpen) {
+        classCocktLibr.style.height = '100vh';
+        isClassicsTabOpen = false;
+    } else if (!isClassicsTabOpen) {
+        classCocktLibr.style.height = '0';
+        isClassicsTabOpen = true;
+    }
+})
 
 let isSideOut = false;
 
