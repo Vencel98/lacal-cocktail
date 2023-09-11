@@ -53,13 +53,13 @@ header {
 
 .headerTextContainer h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 130px;
+    font-size: 6rem;
     font-weight: normal;
     line-height: 0.7;
     letter-spacing: 15px;
     color: rgb(1, 92, 131);
     margin: 0;
-    padding-left: 2%;
+    padding-left: 10%;
     padding-bottom: 2%;
 }
 
@@ -118,11 +118,13 @@ header {
 .librarySide {
     position: fixed;
     height: 100vh;
-    width: 20vh;
+    width: 50vw;
+    min-width: fit-content;
     background-color: rgb(1, 92, 131);
-    right: -450px;
+    right: -55vw;
     overflow-y: scroll;
     border-left: 10px solid rgb(242, 242, 242);
+    z-index: 2;
 
     transition: right 0.75s;
 }
@@ -172,7 +174,7 @@ header {
 
 .cocktailImgCont {
     background-color: rgb(1, 92, 131);
-    width: 60vw;
+    width: 20vh;
     aspect-ratio: 1/1;
     border-radius: 5vw;
     border: 2px solid rgb(1, 1, 1);
@@ -186,7 +188,7 @@ header {
 .cocktailName {
     display: none;
     font-family: 'MyriadPro';
-    font-size: 75px;
+    font-size: 4rem;
     font-weight: normal;
     margin: 7% 0 3% 0;
 }
@@ -218,7 +220,8 @@ header {
 }
 
 .recipeContainer ul li{
-    font-size: 50px;
+    font-size: 3rem;
+    font-weight: bold;
     margin-bottom: 10%;
 }
 
@@ -241,6 +244,9 @@ header {
     width: 43%;
     border-left: 5px solid rgb(1, 92, 131);
     font-family: 'MyriadPro';
+    position: relative;
+    top: -4vh;
+    z-index: 0;
 }
 
 .miscIconContainer {
@@ -261,7 +267,7 @@ header {
 
 .recipeContainer div h3 {
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: normal;
     margin: 0 0 2.5vh 0;}
 

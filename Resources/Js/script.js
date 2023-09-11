@@ -54,6 +54,8 @@ const cocktail = (name, ingredients, glass, ice, method, garnish) => {
 
 
 // CLASSIC COCKTAILS 
+    const iceCubes = 'cubes'
+
     const aperolSpritz = cocktail('Aperol Spritz', ['50ml Aperol', '100ml Le Altane Prosecco'], 'Red Wine Glass', 'Ice cubes', 'Build', 'Orange peel');
     classicCocktailsArr.push(aperolSpritz);
 
@@ -187,9 +189,8 @@ const sidebar = (cocktailArray, cocktailLibrary) => {
             garnish.hidden = false;    
     
             // CLOSING THE SIDEBAR, WHEN AN ITEM IS CLICKED ------------------------------
-            libraryPanel.style.right = '-450px';
-            isSideOut = false;
-    
+            openSide();
+
             cocktailLibrary.style.height = '0';
             isClassicsTabOpen = true;
     
@@ -277,7 +278,7 @@ const openSide = () => {
         libraryPanel.style.right = '0';
         isSideOut = true;
     } else if (isSideOut) {
-        libraryPanel.style.right = '-450px';
+        libraryPanel.style.right = '-55vw';
         isSideOut = false;
     }
 }
