@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script type="text/javascript">
+            function noenter() {
+              return !(window.event && window.event.keyCode == 13); }
+            </script>
         <link rel="stylesheet" href="./Resources/CSS/styles.css">
         <meta name="viewport" content="user-scalable=0">
     </head>
     <body>
         <header>
-            <div class="headerText">
-                <a><h1 id="title">SEARCH YOUR COCKTAIL</h1></a>
+            <div class="headerTextContainer">
+                <div class="headerImageContainer">
+                    <img src="./Resources/Images/logo.png" alt="La Caleta logo">
+                </div>
+                <div class="headerText">
+                    <h2>La Caleta's</h2>
+                    <h1 id="title">DRINKLET</h1>
+                </div>
             </div>
-
-            <form class="searchBlock">
-                <input id="search" type="text" name="cocktail" placeholder="Search...">
-                <button type="button" value="Search!" class="button" id="btn">Search</button>
-            </form>
+            <div class="searchBarContainer">
+                <form class="searchBlock">
+                    <input id="search" type="text" name="cocktail" onkeypress="return noenter()">
+                    <div class="button" id="btn">
+                        <img src="./Resources/Images/searchIcon.png" alt="Press to search">
+                    </div>
+                    <!-- <button type="button" value="Search!"  id="btn">Search</button> -->
+                </form>
+            </div>
 
             <div class="libraryButton" id="librButton">
+                <div class="whiteLine"></div>
+                <div class="whiteLine"></div>
+                <div class="whiteLine"></div>
             </div>
+
             <div class="librarySide" id="librSide">
                 <ul>
-                    <li id="classicCocktLibraryButton">Classic Cocktails</li>
-                    <div id="classCocktailLibrary">
+                    <li class="cocktailListButton" id="signatureCocktLibraryButton">Signature Cocktails</li>
+                    <div class="cocktailLibraryList" id="signatureCocktailLibrary">
+                    </div>
 
+                    <li class="cocktailListButton" id="classicCocktLibraryButton">Classic Cocktails</li>
+                    <div class="cocktailLibraryList" id="classCocktailLibrary">
                     </div>
                 </ul>
             </div>
@@ -32,37 +53,43 @@
                 <div class="cocktailImgCont">
                     <img id="image" src="./Resources/Images/png-transparent-cocktail-fizzy-drinks-martini-drawing-alcoholic-drink-cocktail-glass-rectangle-monochrome.png" alt="Cocktail Picture">
                 </div>
-                <div class="recipeContainer">
-                    <div class="ingredientsContainer">
-                        <ul id="ingredientsList">
-
-                        </ul>
-                    </div>
-                    <div class="miscContainer">
-                        <div>
-                            <h2>Glass</h2>
-                            <h3 id="glass"></h3>
+                <div class="cocktailDetailsContainer">
+                    <h3 class="ingredientH3">INGREDIENTS</h3>
+                    <div class="recipeContainer">
+                        <div class="ingredientsContainer">
+                            <ul id="ingredientsList">
+                            </ul>
                         </div>
-                        <div>
-                            <h2>Method</h2>
-                            <h3 id="method"></h3>
+                        <div class="miscContainer">
+                            <div>
+                                <div class="miscIconContainer"> 
+                                </div>
+                                <h3 id="glass"></h3>
+                            </div>
+                            <div>
+                                <div class="miscIconContainer"> 
+                                </div>
+                                <h3 id="method"></h3>
+                            </div>
+                            <div>
+                                <div class="miscIconContainer"> 
+                                </div>
+                                <h3 id="ice"></h3>
+                            </div>
+                            <div>
+                                <div class="miscIconContainer"> 
+                                </div>
+                                <h3 id="garnish"></h3>
+                            </div>
+                        <!--
+                            <ul class="asd">
+                                <li id="method">Method</li>
+                                <li id="glass">Glass</li>
+                                <li id="ice">Ice</li>
+                                <li id="garnish">Decor</li>
+                            </ul>
+                        -->
                         </div>
-                        <div>
-                            <h2>Ice</h2>
-                            <h3 id="ice"></h3>
-                        </div>
-                        <div>
-                            <h2>Garnish</h2>
-                            <h3 id="garnish"></h3>
-                        </div>
-                    <!--
-                        <ul class="asd">
-                            <li id="method">Method</li>
-                            <li id="glass">Glass</li>
-                            <li id="ice">Ice</li>
-                            <li id="garnish">Decor</li>
-                        </ul>
-                    -->
                     </div>
                 </div>
             </div>

@@ -1,28 +1,94 @@
+@font-face {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    src: url(../Fonts/FranklinGothicMedium.ttf);
+}
+
+@font-face {
+    font-family: 'Saudagar';
+    src: url(../Fonts/Saudagar.ttf);
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url(../Fonts/MyriadPro-Regular.otf);
+}
+
 body {
-    background-color: wheat;
+    margin: 0;
+    background-color: rgb(242, 242, 242
+    );
 }
 
 header {
-    height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header h1 {
-    font-size: 45px;
-    text-align: center;
-    cursor: pointer;
+.headerTextContainer {
+    display: flex;
+    background-color: rgb(214, 209, 196);
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2.5vh;
+    padding-left: 5vw;
+}
+
+.headerImageContainer .headerText {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.headerTextContainer h2 {
+    font-family: 'Saudagar';
+    font-size: 80px;
+    font-weight: normal;
+    line-height: 1;
+    color: rgb(242, 242, 242);
+    margin: 0;
+    margin-top: 3%;
+}
+
+.headerTextContainer h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 130px;
+    font-weight: normal;
+    line-height: 0.7;
+    letter-spacing: 15px;
+    color: rgb(1, 92, 131);
+    margin: 0;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+
+.headerImageContainer {
+    width: 15%;
+
+}
+
+.headerImageContainer img {
+    width: 100%;
 }
 
 .libraryButton {
-    background-color: goldenrod;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     z-index: 3;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 30px;
+    right: 30px;
+}
+
+.libraryButton .whiteLine {
+    background-color: rgb(242, 242, 242);
+    height: 10%;
+    width: 100%;
+    margin: 12% 0 12% 0;
 }
 
 .librarySide ul {
@@ -33,45 +99,69 @@ header h1 {
     font-size: 2vh;
     height: 3vh;
     padding-bottom: 5%;
-    color: gold;
+    color: rgb(214, 209, 196);
 }
 
-#classCocktailLibrary {
+.cocktailLibraryList {
     overflow: hidden;
     height: 0;
 
     transition: height 0.75s;
 }
 
-#classicCocktLibraryButton {
+.cocktailListButton {
     cursor: pointer;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 .librarySide {
     position: fixed;
     height: 100vh;
     width: 20vh;
-    background-color: navy;
+    background-color: rgb(1, 92, 131);
     right: -450px;
     overflow-y: scroll;
+    border-left: 10px solid rgb(242, 242, 242);
 
     transition: right 0.75s;
 }
 
-.searchBlock {
+.searchBarContainer {
+    width: 80%;
+    height: 3vh;
     display: flex;
-    justify-content: center;
-    width: 70%;
+    background-color: rgb(214, 209, 196);
+    border-radius: 25px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.searchBlock {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    padding-right: 1%;
 }
 
 .searchBlock input {
-    width: 70%;
-    height: 40px;
+    height: 100%;
+    width: 81%;
+    background-color: rgb(242, 242, 242);
+    border: 0;
     margin-right: 20px;
+    padding: 0;
 }
 
 .searchBlock .button {
-    width: 20%;
+    width: 7%;
+    height: 100%;
+}
+
+.searchBlock .button img {
+    height: 100%;
+    cursor: pointer;
 }
 
 .cocktailInfo {
@@ -80,24 +170,51 @@ header h1 {
     align-items: center;
 }
 
+.cocktailImgCont {
+    background-color: rgb(1, 92, 131);
+    width: 60vw;
+    aspect-ratio: 1/1;
+    border-radius: 5vw;
+    border: 2px solid rgb(1, 1, 1);
+}
+
 .cocktailInfo img {
     display: hidden;
 }
 
+
 .cocktailName {
     display: none;
-    font-size: 60px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    font-family: 'MyriadPro';
+    font-size: 75px;
+    font-weight: normal;
+    margin: 7% 0 3% 0;
+}
+
+.cocktailDetailsContainer {
+    width: 100%;
+    margin-top: 10%;
+    height: fit-content;
+    background-color: rgb(214, 209, 196);
+    color: rgb(1, 92, 131);
+}
+
+.cocktailDetailsContainer .ingredientH3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 72px;
+    font-weight: normal;
+    letter-spacing: 7px;
+    display: inline-block;
+    margin: 2% 0 0 2%;
 }
 
 .recipeContainer {
-    margin-top: 10%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
 }
 
 .recipeContainer ul li{
@@ -109,11 +226,29 @@ header h1 {
     width: 57%;
 }
 
+.ingredientsContainer ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Saudagar';
+    font-weight: normal;
+    margin-top: 3vh;
+}
+
 .miscContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 43%;
+    border-left: 5px solid rgb(1, 92, 131);
+    font-family: 'MyriadPro';
+}
+
+.miscIconContainer {
+    background-color: white;
+    width: 10vw;
+    aspect-ratio: 1/1;
+    border-radius: 5vw;
+    margin: auto;
 }
 
 .recipeContainer div h2 {
@@ -128,8 +263,7 @@ header h1 {
     text-align: center;
     font-size: 50px;
     font-weight: normal;
-    margin: 0 0 10% 0;
-}
+    margin: 0 0 2.5vh 0;}
 
 .asd {
     width: 43%;
