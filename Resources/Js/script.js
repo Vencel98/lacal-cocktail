@@ -50,6 +50,21 @@ const iceCubes = 'cubes'
     const carribeanQueen = cocktail('Carribean Queen', ['<span>1dash.</span> Angostura Bitters', '<span>2dash.</span> Creole bitters', '<span>20ml</span> Lime juice', '<span>40ml</span> Pink grapefruit juice', '<span>30ml</span> Pineapple chutney', '<span>15ml</span> Orgeat', '<span>20ml</span> Licor43 Horchata', '<span>20ml</span> Masticha', '<span>50ml</span> Dos Maderas 5+3', '<span>5ml</span> Plantation overproof rum'], 'Coconut mug', iceCubes + ', <br>Top crushed', 'Shake', 'Short straw, <br>Mint spring, <br>Dehyd. Pineapple, <br>Grapefruit slice, <br>Cherry');
     signatureCocktailsArr.push(carribeanQueen);
 
+    const ciaoBella = cocktail('Ciao Bella', ['<span>20ml</span> Lime juice, <span>20ml</span> Cherry syrup', '<span>20ml</span> Ginato Pompelmo', '<span>20ml</span> Lustau Vermut Rose', '<span>20ml</span> Cynar', '<span>25ml</span> Egg white'], 'Double rocks glass', 'Ice cubes', 'Dry shake, Shake', 'Cherry, <br>Basil Leaf');
+    signatureCocktailsArr.push(ciaoBella);
+
+    const rosalinda = cocktail('Rosalinda', ['<span>1</span> Orange wedge', '<span>30ml</span> Lemon juice', '<span>15ml</span> Hibiscus Syrup', '<span>30ml</span> Amaretto Disaronno', '<span>30ml</span> Orange inf. Four Roses', '<span>30ml</span> Egg white'], 'Tall coupe', '1 Ice ball', 'Dry shake, Shake', 'Campari powder rim, <br> Micro herbs, <br>Rose petals, <br>Campari powder on top');
+    signatureCocktailsArr.push(rosalinda);
+
+    const cloud91 = cocktail('Cloud 9+1', ['<span>15ml</span> Coconut puree', '<span>22.5ml</span> Lemon juice', '<span>22.5ml</span> Double cream', '<span>15ml</span> Blue Curacao syrup', '<span>22.5ml</span> Simple syrup', '<span>37.5ml</span> Lemon inf. Aviation', '<span>30ml</span> Egg white', '<span>Top</span> Soda water'], 'Pint glass', 'No ice', 'Shake, Blend', 'Blue Curacao powder, <br>Discarded lemon peel');
+    signatureCocktailsArr.push(cloud91);
+
+    const lAppelDuVide = cocktail('L\'appel du Vide', ['<span>10ml</span> Penja pepper cordial', '<span>10ml</span> Lavender syrup', '<span>30ml</span> La Tomato', '<span>30ml</span> Sake', '<span>50ml</span> Chilli&Coriander inf. Yuzu Etsu'], 'Clear shortball', 'Clear ice block', 'Roll', 'Coriander leaf, <br>Chilli strings');
+    signatureCocktailsArr.push(lAppelDuVide);
+
+    const dolceFarNiente = cocktail('Dolce far Niente', ['<span>15ml</span> Lemon juice', '<span>15ml</span> Lime juice', '<span>10ml</span> Bergamot syrup', '<span>15ml</span> Amaretto Disaronno', '<span>30ml</span> Limoncello', '<span>30ml</span> Casadores Reposado'], 'Short coupe', 'No ice', 'Shake', 'Dehyd. lemon wheel');
+    signatureCocktailsArr.push(dolceFarNiente);
+
     //Adds all SIGNATURE cocktails into the allCocktailsArr.
     for (i = 0; i < signatureCocktailsArr.length; i++) {
         allCocktailsArr.push(signatureCocktailsArr[i]);
@@ -67,7 +82,7 @@ const iceCubes = 'cubes'
     const caipirinha = cocktail('Caipirinha', ['<span>20ml</span> Demerara simple syrup', '<span>20ml</span> Lime juice', '<span>50ml</span> Velho Barrerio Cachaca'], 'Double rocks glass', 'Ice cubes, top crushed', 'Build', 'Dehyd. lime wheel, <br>Short straw');
     classicCocktailsArr.push(caipirinha);
 
-    const cosmopolitan = cocktail('Cosmopolitan', ['<span>5ml</span> Simple Syrup', '<span>15ml</span> Lime juice', '<span>15ml</span> Cranberry juice', '<span>20ml</span> Cointreau', '<span>50ml</span> Roberto Cavalli Vodka'], 'Tall Coupe', 'Shake', 'No ice', 'Orange peel');
+    const cosmopolitan = cocktail('Cosmopolitan', ['<span>5ml</span> Simple Syrup', '<span>15ml</span> Lime juice', '<span>15ml</span> Cranberry juice', '<span>20ml</span> Cointreau', '<span>50ml</span> Roberto Cavalli Vodka'], 'Tall Coupe', 'No ice', 'Shake', 'Orange peel');
     classicCocktailsArr.push(cosmopolitan);
 
     const daiquiri = cocktail('Daiquiri', ['<span>20ml</span> Simple Syrup /Flavour', '<span>30ml</span> Lime juice', '<span>60ml</span> Hava Club 3yo Rum'], 'Short coupe', 'No ice', 'Shake', 'Dehyd. lime wheel');
