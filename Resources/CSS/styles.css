@@ -17,6 +17,8 @@ body {
     margin: 0;
     background-color: rgb(242, 242, 242);
     overflow-x: clip;
+    background-image: url(../Images/background-leaf.png);
+    background-size: cover;
 }
 
 header {
@@ -227,6 +229,10 @@ header {
 
 .ingredientsContainer {
     width: 55%;
+}
+
+.ingredientsContainer span {
+    color: rgb(1, 1, 1);
 }
 
 .ingredientsContainer ul {

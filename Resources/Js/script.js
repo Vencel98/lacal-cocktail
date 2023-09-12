@@ -44,10 +44,10 @@ const cocktail = (name, ingredients, glass, ice, method, garnish) => {
 const iceCubes = 'cubes'
 
 // SIGNATURE COCKTAILS
-    const laIslaBonita = cocktail('La Isla Bonita', ['15ml Guava Syrup', '30ml Lemon juice', '15ml Chambord', '20ml Bonanto', '60ml Chaval Rosado', '30ml Veuve Clicquot'], 'Veuve Clicquot glass', '1 Ice ball', 'Roll', 'Lemon peel');
+    const laIslaBonita = cocktail('La Isla Bonita', ['<span>15ml</span> Guava Syrup', '<span>30ml</span> Lemon juice', '<span>15ml</span> Chambord', '<span>20ml</span> Bonanto', '<span>60ml</span> Chaval Rosado', '<span>30ml</span> Veuve Clicquot'], 'Veuve Clicquot glass', '1 Ice ball', 'Roll', 'Lemon peel');
     signatureCocktailsArr.push(laIslaBonita);
 
-    const carribeanQueen = cocktail('Carribean Queen', ['1dash. Angostura Bitters', '2dash. Creole bitters', '20ml Lime juice', '40ml Pink grapefruit juice', '30ml Pineapple chutney', '15ml Orgeat', '20ml Licor43 Horchata', '20ml Masticha', '50ml Dos Maderas 5+3', '5ml Plantation overproof rum'], 'Coconut mug', iceCubes + ', <br>Top crushed', 'Shake', 'Short straw, <br>Mint spring, <br>Dehyd. Pineapple, <br>Grapefruit slice, <br>Cherry');
+    const carribeanQueen = cocktail('Carribean Queen', ['<span>1dash.</span> Angostura Bitters', '<span>2dash.</span> Creole bitters', '<span>20ml</span> Lime juice', '<span>40ml</span> Pink grapefruit juice', '<span>30ml</span> Pineapple chutney', '<span>15ml</span> Orgeat', '<span>20ml</span> Licor43 Horchata', '<span>20ml</span> Masticha', '<span>50ml</span> Dos Maderas 5+3', '<span>5ml</span> Plantation overproof rum'], 'Coconut mug', iceCubes + ', <br>Top crushed', 'Shake', 'Short straw, <br>Mint spring, <br>Dehyd. Pineapple, <br>Grapefruit slice, <br>Cherry');
     signatureCocktailsArr.push(carribeanQueen);
 
     //Adds all SIGNATURE cocktails into the allCocktailsArr.
@@ -58,79 +58,79 @@ const iceCubes = 'cubes'
 
 // CLASSIC COCKTAILS 
 
-    const aperolSpritz = cocktail('Aperol Spritz', ['50ml Aperol', '100ml Le Altane Prosecco'], 'Red Wine Glass', 'Ice cubes', 'Build', 'Orange peel');
+    const aperolSpritz = cocktail('Aperol Spritz', ['<span>50ml</span> Aperol', '<span>100ml</span> Le Altane Prosecco'], 'Red Wine Glass', 'Ice cubes', 'Build', 'Orange peel');
     classicCocktailsArr.push(aperolSpritz);
 
-    const amarettoSour = cocktail('Amaretto Sour', ['2 dash. Angostura Bitters', '15ml Simple Syrup', '25ml Lemon juice', '50ml Amaretto Disaronno', '25ml Egg white'], 'Double rocks glass', 'Ice balls', 'Dry shake / Shake', 'Dehyd. lemon wheel, <br>Cherry');
+    const amarettoSour = cocktail('Amaretto Sour', ['<span>2 dash.</span> Angostura Bitters', '<span>15ml</span> Simple Syrup', '<span>25ml</span> Lemon juice', '<span>50ml</span> Amaretto Disaronno', '<span>25ml</span> Egg white'], 'Double rocks glass', 'Ice balls', 'Dry shake / Shake', 'Dehyd. lemon wheel, <br>Cherry');
     classicCocktailsArr.push(amarettoSour);
 
-    const caipirinha = cocktail('Caipirinha', ['20ml Demerara simple syrup', '20ml Lime juice', '50ml Velho Barrerio Cachaca'], 'Double rocks glass', 'Ice cubes, top crushed', 'Build', 'Dehyd. lime wheel, <br>Short straw');
+    const caipirinha = cocktail('Caipirinha', ['<span>20ml</span> Demerara simple syrup', '<span>20ml</span> Lime juice', '<span>50ml</span> Velho Barrerio Cachaca'], 'Double rocks glass', 'Ice cubes, top crushed', 'Build', 'Dehyd. lime wheel, <br>Short straw');
     classicCocktailsArr.push(caipirinha);
 
-    const cosmopolitan = cocktail('Cosmopolitan', ['5ml Simple Syrup', '15ml Lime juice', '15ml Cranberry juice', '20ml Cointreau', '50ml Roberto Cavalli Vodka'], 'Tall Coupe', 'Shake', 'No ice', 'Orange peel');
+    const cosmopolitan = cocktail('Cosmopolitan', ['<span>5ml</span> Simple Syrup', '<span>15ml</span> Lime juice', '<span>15ml</span> Cranberry juice', '<span>20ml</span> Cointreau', '<span>50ml</span> Roberto Cavalli Vodka'], 'Tall Coupe', 'Shake', 'No ice', 'Orange peel');
     classicCocktailsArr.push(cosmopolitan);
 
-    const daiquiri = cocktail('Daiquiri', ['20ml Simple Syrup /Flavour', '30ml Lime juice', '60ml Hava Club 3yo Rum'], 'Short coupe', 'No ice', 'Shake', 'Dehyd. lime wheel');
+    const daiquiri = cocktail('Daiquiri', ['<span>20ml</span> Simple Syrup /Flavour', '<span>30ml</span> Lime juice', '<span>60ml</span> Hava Club 3yo Rum'], 'Short coupe', 'No ice', 'Shake', 'Dehyd. lime wheel');
     classicCocktailsArr.push(daiquiri);
 
-    const espressoMartini = cocktail('Espresso Martini', ['Double espresso shot', '10ml Simple Syrup', '20ml Coffee Liqueur', '50ml Vanilla inf. Roberto Cavalli vodka'], 'Short coupe', 'No ice', 'Shake', 'Grated tonka bean');
+    const espressoMartini = cocktail('Espresso Martini', ['<span>1</span> Double espresso shot', '<span>10ml</span> Simple Syrup', '<span>20ml</span> Coffee Liqueur', '<span>50ml</span> Vanilla inf. Roberto Cavalli vodka'], 'Short coupe', 'No ice', 'Shake', 'Grated tonka bean');
     classicCocktailsArr.push(espressoMartini);
 
-    const ginBasilSmash = cocktail('Gin Basil Smash', ['6-8 Basil leaves', '20ml Simple Syrup', '20ml Lemon juice', '50ml Larios gin'], 'Double rocks glass', 'Ice cubes', 'Shake', 'Basil spring');
+    const ginBasilSmash = cocktail('Gin Basil Smash', ['<span>6-8</span> Basil leaves', '<span>20ml</span> Simple Syrup', '<span>20ml</span> Lemon juice', '<span>50ml</span> Larios gin'], 'Double rocks glass', 'Ice cubes', 'Shake', 'Basil spring');
     classicCocktailsArr.push(ginBasilSmash);
 
-    const ginFizz = cocktail('Gin Fizz', ['20ml Simple Syrup', '20ml Lemon juice', '50ml Larios gin', '25ml Egg white', 'Top Soda water'], 'Highball', 'Ice cubes', 'Shake', 'Lemon peel');
+    const ginFizz = cocktail('Gin Fizz', ['<span>20ml</span> Simple Syrup', '<span>20ml</span> Lemon juice', '<span>50ml</span> Larios gin', '<span>25ml</span> Egg white', '<span>Top</span> Soda water'], 'Highball', 'Ice cubes', 'Shake', 'Lemon peel');
     classicCocktailsArr.push(ginFizz);
 
-    const hugo = cocktail('Hugo', ['6-8 Mint leaves', '50ml Elderflower liqueur', '100ml Le Altane prosecco'], 'Red wine glass', 'Ice cubes', 'Shake', 'Mint spring, <br>dehyd. lime wheel');
+    const hugo = cocktail('Hugo', ['<span>6-8</span> Mint leaves', '<span>50ml</span> Elderflower liqueur', '<span>100ml</span> Le Altane prosecco'], 'Red wine glass', 'Ice cubes', 'Shake', 'Mint spring, <br>dehyd. lime wheel');
     classicCocktailsArr.push(hugo);
 
-    const longIslandIcedTea = cocktail('Long Island Iced Tea', ['5ml Simple Syrup', '25ml Lemon juice', '10ml Cointreau', '10ml Larios gin', '10ml Roberto Cavalli vodka', '10ml Havanna Club 3yo', '10ml Sierra Antiguo Plata', 'Top Coca Cola'], 'Highball', 'Ice cubes', 'Shake', 'Dehyd. lemon wheel');
+    const longIslandIcedTea = cocktail('Long Island Iced Tea', ['<span>5ml</span> Simple Syrup', '<span>25ml</span> Lemon juice', '<span>10ml</span> Cointreau', '<span>10ml</span> Larios gin', '<span>10ml</span> Roberto Cavalli vodka', '<span>10ml</span> Havanna Club 3yo', '<span>10ml</span> Sierra Antiguo Plata', '<span>Top</span> Coca Cola'], 'Highball', 'Ice cubes', 'Shake', 'Dehyd. lemon wheel');
     classicCocktailsArr.push(longIslandIcedTea);
 
-    const maiTai = cocktail('Mai Tai', ['10ml Orgeat', '20ml Lime juice', '15ml Cointreau', '45ml Plantation Dark Rum'], 'Double rock glass', 'Ice balls', 'Shake', 'Mint spring, <br>dehyd. lime wheel');
+    const maiTai = cocktail('Mai Tai', ['<span>10ml</span> Orgeat', '<span>20ml</span> Lime juice', '<span>15ml</span> Cointreau', '<span>45ml</span> Plantation Dark Rum'], 'Double rock glass', 'Ice balls', 'Shake', 'Mint spring, <br>dehyd. lime wheel');
     classicCocktailsArr.push(maiTai);
 
-    const manhattanSweet = cocktail('Manhattan Sweet', ['2 dash. Angostura bitters', '30ml Antica Formula', '60ml Four Roses bourbon'], 'Tall coupe', 'No ice', 'Stir', 'Cherry');
+    const manhattanSweet = cocktail('Manhattan Sweet', ['<span>2 dash.</span> Angostura bitters', '<span>30ml</span> Antica Formula', '<span>60ml</span> Four Roses bourbon'], 'Tall coupe', 'No ice', 'Stir', 'Cherry');
     classicCocktailsArr.push(manhattanSweet);
 
-    const manhattanDry = cocktail('Manhattan Dry', ['2 dash. Angostura bitters', '30ml Martini Extra Dry', '60ml Four Roses bourbon'], 'Tall coupe', 'No ice', 'Stir', 'Lemon peel');
+    const manhattanDry = cocktail('Manhattan Dry', ['<span>2 dash.</span> Angostura bitters', '<span>30ml</span> Martini Extra Dry', '<span>60ml</span> Four Roses bourbon'], 'Tall coupe', 'No ice', 'Stir', 'Lemon peel');
     classicCocktailsArr.push(manhattanDry);
 
-    const manhattanPerfect = cocktail('Manhattan Perfect', ['2 dash. Angostura bitters', '15ml Martini Extra Dry', '15ml Antica Formula'], 'Tall coupe', 'No ice', 'Stir', 'Orange peel');
+    const manhattanPerfect = cocktail('Manhattan Perfect', ['<span>2 dash.</span> Angostura bitters', '<span>15ml</span> Martini Extra Dry', '<span>15ml</span> Antica Formula'], 'Tall coupe', 'No ice', 'Stir', 'Orange peel');
     classicCocktailsArr.push(manhattanPerfect);
 
-    const margarita = cocktail('Margarita', ['1 brsp Agave Nectar', '/20ml Flavour', '25ml Lime juice', '25ml Cointreau', '50ml Sierra Antiquo Plata'], 'Double rocks glass', 'Ice balls', 'Shake', 'Dehyd. lime wheel');
+    const margarita = cocktail('Margarita', ['<span>1 brsp</span> Agave Nectar', '<br>/<span>20ml</span> Flavour', '<span>25ml</span> Lime juice', '<span>25ml</span> Cointreau', '<span>50ml</span> Sierra Antiquo Plata'], 'Double rocks glass', 'Ice balls', 'Shake', 'Dehyd. lime wheel');
     classicCocktailsArr.push(margarita);
 
-    const martiniDry = cocktail('Martini Dry', ['10ml Martini Extra Dry', '80ml Gin Mare <br>/85ml Grey Goose vodka'], 'Tall coupe', 'No ice', 'Stir', 'Lemon peel or <br>3 olives on the side');
+    const martiniDry = cocktail('Martini Dry', ['<span>10ml</span> Martini Extra Dry', '<span>80ml</span> Gin Mare <br>/ Grey Goose vodka'], 'Tall coupe', 'No ice', 'Stir', 'Lemon peel or <br>3 olives on the side');
     classicCocktailsArr.push(martiniDry);
 
-    const martiniExtraDry = cocktail('Martini Extra Dry', ['5ml Martini Extra Dry', '85ml Gin Mare <br>/85ml Grey Goose vodka'], 'Tall coupe', 'No ice', 'Stir', 'Lemon peel or <br>3 olives on the side');
+    const martiniExtraDry = cocktail('Martini Extra Dry', ['<span>5ml</span> Martini Extra Dry', '<span>85ml</span> Gin Mare <br>/ Grey Goose vodka'], 'Tall coupe', 'No ice', 'Stir', 'Lemon peel or <br>3 olives on the side');
     classicCocktailsArr.push(martiniExtraDry);
 
-    const martiniWet = cocktail('Martini Wet', ['30ml Martini Extra Dry', '60ml Gin Mare <br>/60ml Grey Goose vodka'], 'Tall coupe', 'No ice', 'Stir', 'Lemon peel or <br>3 olives on the side');
+    const martiniWet = cocktail('Martini Wet', ['<span>30ml</span> Martini Extra Dry', '<span>60ml</span> Gin Mare <br>/ Grey Goose vodka'], 'Tall coupe', 'No ice', 'Stir', 'Lemon peel or <br>3 olives on the side');
     classicCocktailsArr.push(martiniWet);
 
-    const martiniDirty = cocktail('Martini Dirty', ['Pinch Salt', '15ml Martini Extra Dry', '75ml Gin Mare <br>/75ml Grey Goose vodka'], 'Tall coupe', 'No ice', 'Stir', '3 olives on the side');
+    const martiniDirty = cocktail('Martini Dirty', ['<span>Pinch</span> Salt', '<span>15ml</span> Martini Extra Dry', '<span>75ml</span> Gin Mare <br>/ Grey Goose vodka'], 'Tall coupe', 'No ice', 'Stir', '3 olives on the side');
     classicCocktailsArr.push(martiniDirty);
 
-    const mojito = cocktail('Mojito', ['6-8 Mint leaves', '20ml Demerara simple syrup <br>/20ml Flavour', '20ml Lime juice', '50ml Havana Club 3yo', 'dash Soda'], 'Highball', 'Ice cubes, <br>Top crushed', 'Build', 'Mint spring, <br>Dehyd. lime wheel <br>/Fruit according to flavour');
+    const mojito = cocktail('Mojito', ['<span>6-8</span> Mint leaves', '<span>20ml</span> Demerara simple syrup <br>/ Flavour', '<span>20ml</span> Lime juice', '<span>50ml</span> Havana Club 3yo', '<span>dash</span> Soda'], 'Highball', 'Ice cubes, <br>Top crushed', 'Build', 'Mint spring, <br>Dehyd. lime wheel <br>/Fruit according to flavour');
     classicCocktailsArr.push(mojito);
 
-    const moscowMule = cocktail('Moscow Mule', ['25ml Lime juice', '50ml Roberto Cavalli vodka', 'Top up Ginger beer'], 'Highball', 'Ice cubes', 'Build', 'Dehyd. lime wheel');
+    const moscowMule = cocktail('Moscow Mule', ['<span>25ml</span> Lime juice', '<span>50ml</span> Roberto Cavalli vodka', '<span>Top</span> Ginger beer'], 'Highball', 'Ice cubes', 'Build', 'Dehyd. lime wheel');
     classicCocktailsArr.push(moscowMule);
 
-    const negroni = cocktail('Negroni', ['30ml Larios', '30ml Antica Formula', '30ml Campari'], 'Clear shortball', 'Stir', 'Clear ice block', 'Orange peel'); 
+    const negroni = cocktail('Negroni', ['<span>30ml</span> Larios', '<span>30ml</span> Antica Formula', '<span>30ml</span> Campari'], 'Clear shortball', 'Stir', 'Clear ice block', 'Orange peel'); 
     classicCocktailsArr.push(negroni);
 
-    const oldFashioned = cocktail('Old Fashioned', ['1 dash Orange Bitters', '2 dash. Angostura bitters', '10ml Demerara simple syrup', '60ml Four Roses Bourbon'], 'Clear shortball', 'Clear ice block', 'Stir', 'Orange peel');
+    const oldFashioned = cocktail('Old Fashioned', ['<span>1 dash</span> Orange Bitters', '<span>2 dash.</span> Angostura bitters', '<span>10ml</span> Demerara simple syrup', '<span>60ml</span> Four Roses Bourbon'], 'Clear shortball', 'Clear ice block', 'Stir', 'Orange peel');
     classicCocktailsArr.push(oldFashioned);
 
-    const pinaColada = cocktail('Pina Colada', ['15ml Lime juice', '30ml Coconut puree', '60ml Pineapple juice', '50ml Havana Club 3yo'], 'Red wine glass', 'Ice cubes, <br>Top crushed', 'Shake', 'Dehyd. pineapple, <br>Cherry');
+    const pinaColada = cocktail('Pina Colada', ['<span>15ml</span> Lime juice', '<span>30ml</span> Coconut puree', '<span>60ml</span> Pineapple juice', '<span>50ml</span> Havana Club 3yo'], 'Red wine glass', 'Ice cubes, <br>Top crushed', 'Shake', 'Dehyd. pineapple, <br>Cherry');
     classicCocktailsArr.push(pinaColada);
 
-    const whiskeySour = cocktail('Whiskey Sour', ['2 dash. Angostura bitters', '20ml Simple syrup', '20ml Lemon juice', '50ml Four Roses Bourbon', '25ml Egg white'], 'Double rocks glass', 'Ice balls', 'Dry shake, <br>Shake', 'Dehyd. lemon wheel, <br>Cherry');
+    const whiskeySour = cocktail('Whiskey Sour', ['<span>2 dash.</span> Angostura bitters', '<span>20ml</span> Simple syrup', '<span>20ml</span> Lemon juice', '<span>50ml</span> Four Roses Bourbon', '<span>25ml</span> Egg white'], 'Double rocks glass', 'Ice balls', 'Dry shake, <br>Shake', 'Dehyd. lemon wheel, <br>Cherry');
     classicCocktailsArr.push(whiskeySour);
 
     //Adds all CLASSIC cocktails into the allCocktailsArr.
