@@ -15,8 +15,8 @@
 
 body {
     margin: 0;
-    background-color: rgb(242, 242, 242
-    );
+    background-color: rgb(242, 242, 242);
+    overflow-x: clip;
 }
 
 header {
@@ -203,7 +203,7 @@ header {
 
 .cocktailDetailsContainer .ingredientH3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: normal;
     letter-spacing: 7px;
     display: inline-block;
@@ -215,8 +215,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
-    width: 85%;
+    justify-content: space-around;
+    width: 95%;
 }
 
 .recipeContainer ul li{
@@ -226,7 +226,7 @@ header {
 }
 
 .ingredientsContainer {
-    width: 57%;
+    width: 55%;
 }
 
 .ingredientsContainer ul {
@@ -241,20 +241,46 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 43%;
+    width: 40%;
     border-left: 5px solid rgb(1, 92, 131);
     font-family: 'MyriadPro';
     position: relative;
-    top: -4vh;
+    top: -3vh;
     z-index: 0;
 }
 
 .miscIconContainer {
     background-color: white;
     width: 10vw;
+    height: 10vw;
     aspect-ratio: 1/1;
     border-radius: 5vw;
     margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miscIconContainer img {
+    width: 225%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#glassIcon {
+    width: 135%;
+    transform: rotate(3deg);
+}
+
+#methodIcon {
+    width: 150%;
+    transform: rotate(45deg) translate(-10px, -5px);
+}
+
+#garnishIcon {
+    width: 170%;
 }
 
 .recipeContainer div h2 {

@@ -40,11 +40,14 @@ const cocktail = (name, ingredients, glass, ice, method, garnish) => {
     }
 }
 
+
+const iceCubes = 'cubes'
+
 // SIGNATURE COCKTAILS
     const laIslaBonita = cocktail('La Isla Bonita', ['15ml Guava Syrup', '30ml Lemon juice', '15ml Chambord', '20ml Bonanto', '60ml Chaval Rosado', '30ml Veuve Clicquot'], 'Veuve Clicquot glass', '1 Ice ball', 'Roll', 'Lemon peel');
     signatureCocktailsArr.push(laIslaBonita);
 
-    const carribeanQueen = cocktail('Carribean Queen', ['1dash. Angostura Bitters', '2dash. Creole bitters', '20ml Lime juice', '40ml Pink grapefruit juice', '30ml Pineapple chutney', '15ml Orgeat', '20ml Licor43 Horchata', '20ml Masticha', '50ml Dos Maderas 5+3', '5ml Plantation overproof rum'], 'Coconut mug', 'Ice cubes, <br>Top crushed', 'Shake', 'Short straw, <br>Mint spring, <br>Dehyd. Pineapple, <br>Grapefruit slice, <br>Cherry');
+    const carribeanQueen = cocktail('Carribean Queen', ['1dash. Angostura Bitters', '2dash. Creole bitters', '20ml Lime juice', '40ml Pink grapefruit juice', '30ml Pineapple chutney', '15ml Orgeat', '20ml Licor43 Horchata', '20ml Masticha', '50ml Dos Maderas 5+3', '5ml Plantation overproof rum'], 'Coconut mug', iceCubes + ', <br>Top crushed', 'Shake', 'Short straw, <br>Mint spring, <br>Dehyd. Pineapple, <br>Grapefruit slice, <br>Cherry');
     signatureCocktailsArr.push(carribeanQueen);
 
     //Adds all SIGNATURE cocktails into the allCocktailsArr.
@@ -54,7 +57,6 @@ const cocktail = (name, ingredients, glass, ice, method, garnish) => {
 
 
 // CLASSIC COCKTAILS 
-    const iceCubes = 'cubes'
 
     const aperolSpritz = cocktail('Aperol Spritz', ['50ml Aperol', '100ml Le Altane Prosecco'], 'Red Wine Glass', 'Ice cubes', 'Build', 'Orange peel');
     classicCocktailsArr.push(aperolSpritz);
